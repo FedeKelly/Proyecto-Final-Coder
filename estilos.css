@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap");
+@import url(https://allfont.es/allfont.css?fonts=americana-bt-bold);
+@import url("http://fonts.cdnfonts.com/css/gotham");
+
+ul {
+  list-style-type: none;
+}
+.titulo {
+  font-family: "Americana BT Bold", arial;
+  font-size: 40px;
+}
+.paratexto {
+  font-family: "Josefin Slab", serif;
+  font-size: 25px;
+}
+.texto {
+  font-family: "Gotham", sans-serif;
+  font-size: 20px;
+}
+.li {
+  font-family: "Americana BT Bold", arial;
+  font-weight: bold;
+  padding-bottom: 3px;
+  font-size: small;
+}
+
+img {
+  max-width: 100%;
+  margin: 10px;
+}
+img,
+iframe,
+svg {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.body {
+  background-color: #9d9d9c;
+  padding: 10px;
+}
+.header {
+  background-color: #003366;
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+  height: 8rem;
+}
+.header__nav {
+  background-color: #9d9d9c;
+  padding: 1rem;
+  box-shadow: -10px 5px 5px#9d9d9c;
+  border: 1px solid #7e7e7d;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+.header__nav ul li {
+  display: inline-block;
+  text-decoration-color: white;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-shadow: 2px;
+}
+.header__nav li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.background {
+  background-image: url("images/fondo1.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90%;
+  min-height: 100vh;
+  margin-bottom: 3rem;
+  align-self: center;
+}
+.hero {
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  flex-wrap: wrap;
+}
+.hero__parrafo {
+  width: 430px;
+  height: 300px;
+}
+.hero__parrafo__titulo {
+  margin-bottom: 2rem;
+}
+.hero__img {
+  width: 300px;
+}
+.hero__llegar {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.footer {
+  background-color: #00a19a;
+  display: flex;
+  align-items: top;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-top: 15px;
+}
+.footer__section {
+  padding: 5px;
+  width: 320px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.footer__imgicon {
+  width: 30px;
+  height: 30px;
+  align-items: center;
+}
+.fieldset {
+  background-color: #fcca86;
+  padding: 10px;
+  margin: 10px;
+}
+.fieldset__form {
+  padding: 3px;
+}
+.fieldset__textarea {
+  margin-top: 5px;
+}
+label {
+  margin: 2px;
+}
+input {
+  height: 22px;
+}
+.fieldset__btn {
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  height: fit-content;
+}
