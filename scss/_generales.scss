@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap");
+@import url(https://allfont.es/allfont.css?fonts=americana-bt-bold);
+@import url("http://fonts.cdnfonts.com/css/gotham");
+
+.titulo {
+  font-family: "Americana BT Bold", arial;
+  font-size: 20px;
+}
+.paratexto {
+  font-family: "Josefin Slab", serif;
+  font-size: 12px;
+}
+.texto {
+  font-family: "Gotham", sans-serif;
+  font-size: 15px;
+}
+img {
+  max-width: 100%;
+  margin: 10px;
+}
+img,
+iframe,
+svg {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style-type: none;
+}

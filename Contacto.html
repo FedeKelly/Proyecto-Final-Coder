@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width=, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
     <link rel="shortcut icon" href="images/favicon.gif"/>
     <link
     rel="stylesheet"
@@ -13,17 +13,17 @@
     <title>Instituto Da Vinci</title>
   </head>
   <div class="container__contacto">
-    <body class="body">
-      <header class="header">
-        <a class="header__index" href="index.html">
+    <body>
+      <header>
+        <a href="index.html">
         <img id=logo src="images/logoprincipal.gif" alt="logo" /></a>
-        <nav class="header__nav">
-          <ul class="header__ul">
-            <li class="li"><a href="institucional.html">Institucional</a></li>
-            <li class="li"><a href="parapacientes.html"> Para Pacientes</a></li>
-            <li class="li"><a href="paraprofesionales.html">Para Profesionales</a></li>
-            <li class="li"><a href="turnos.html">Turnos</a></li>
-            <li class="li"><a href="Contacto.html">Contacto</a></li>
+        <nav>
+          <ul>
+            <li><a href="institucional.html">Institucional</a></li>
+            <li><a href="parapacientes.html"> Para Pacientes</a></li>
+            <li><a href="paraprofesionales.html">Para Profesionales</a></li>
+            <li><a href="turnos.html">Turnos</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </header>
@@ -33,8 +33,8 @@
             <span class="texto">Utilizá el formulario de abajo para contactarnos. Completá los campos y te contactaremos a la brevedad.</span>
          </div>
         </section>
-        <fieldset class="fieldset animate__animated animate__fadeInDown">
-            <form class="fieldset__form">
+        <fieldset class="animate__animated animate__fadeInDown">
+            <form>
               <label class="texto" for="nombre">Nombre:</label>
               <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>
               <label class="texto" for="apellido">Apellido:</label>
@@ -43,17 +43,17 @@
               <input type="email" id="mail" name="mail" placeholder="nombre@ejemplo.com.ar"/>
               <label class="texto" for="celular">Celular:</label>
               <input type="text" id="celular" name="celular" placeholder="celular"/></p>
-              <select class="fieldset__select" name="opcion" id="">Motivo de Contacto
+              <select name="opcion" id="">Motivo de Contacto
                 <option value="1">Consulta por Cobertura</option>
                 <option value="2">Consulta para Profesionales</option>
                 <option value="3">Reclamos</option>
                 <option value="4">Trabajar con nosotros</option>
                 <option value="5">Otros</option>
               </select></p>
-              <textarea class="fieldset__textarea" name="desarrollo" id="" placeholder="Indique los motivos de su consulta"></textarea></p>
+              <textarea name="desarrollo" id="" placeholder="Indique los motivos de su consulta"></textarea></p>
               <div class="fieldset__btn">
-                <input class="fieldset__btn" type="submit" value="Enviar Consulta"/>
-                <input class="fieldset__btn" type="reset" value="Limpiar Formulario">
+                <input type="submit" value="Enviar Consulta"/>
+                <input type="reset" value="Limpiar Formulario">
               </div>
             </form>
         </fieldset>
