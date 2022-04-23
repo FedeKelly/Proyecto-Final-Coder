@@ -1,42 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap");
+@import url(https://allfont.es/allfont.css?fonts=americana-bt-bold);
+@import url("http://fonts.cdnfonts.com/css/gotham");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap");
-@import url(https://allfont.es/allfont.css?fonts=americana-bt-bold);
-@import url("http://fonts.cdnfonts.com/css/gotham");
 
-ul {
-  list-style-type: none;
-}
 .titulo {
   font-family: "Americana BT Bold", arial;
   font-size: 20px;
 }
+
 .paratexto {
   font-family: "Josefin Slab", serif;
   font-size: 12px;
 }
+
 .texto {
   font-family: "Gotham", sans-serif;
   font-size: 15px;
-}
-.li {
-  font-family: "Americana BT Bold", arial;
-  font-weight: bold;
-  padding-bottom: 3px;
-  font-size: small;
-  transition: 0.5s;
-}
-.li:hover {
-  font-size: medium;
 }
 
 img {
   max-width: 100%;
   margin: 10px;
 }
+
 img,
 iframe,
 svg {
@@ -48,146 +38,161 @@ a {
   color: black;
 }
 
-.body {
+ul {
+  list-style-type: none;
+}
+
+body {
   background: linear-gradient(to bottom right, #17acb1, #7aeef1);
   text-align: center;
 }
-.header {
-  background: linear-gradient(
-    to right,
-    rgba(0, 51, 102, 1) 0%,
-    rgba(0, 51, 102, 1) 3%,
-    rgba(221, 227, 233, 1) 50%,
-    rgba(0, 74, 117, 1) 92%,
-    rgba(0, 54, 107, 1) 93%,
-    rgba(0, 54, 107, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003366', endColorstr='#00366b', GradientType=1 );
+body header {
+  background: linear-gradient(to right, rgb(0, 51, 102) 0%, rgb(0, 51, 102) 3%, rgb(221, 227, 233) 50%, rgb(0, 74, 117) 92%, rgb(0, 54, 107) 93%, rgb(0, 54, 107) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#003366", endColorstr="#00366b", GradientType=1 );
   border-bottom: 1px solid black;
   height: fit-content;
-  grid-area: header;
 }
-#logo {
-  height: 3rem;
-  margin: 0;
-}
-.header__nav {
+body header nav {
   background-color: #9d9d9c;
   grid-area: nav;
   padding-top: 5px;
   padding-bottom: 5px;
   width: -webkit-fill-available;
 }
-.header__nav ul li {
+body header nav li {
   text-transform: uppercase;
+  font-family: "Americana BT Bold", arial;
+  font-weight: bold;
+  padding-bottom: 3px;
+  font-size: small;
+  transition: 0.5s;
 }
+body header nav li:hover {
+  font-size: medium;
+}
+
+#logo {
+  height: 3rem;
+  margin: 0;
+}
+
 .hero {
   padding-top: 1.5rem;
   padding: 5px;
   margin-bottom: 1.5rem;
   grid-area: hero;
 }
+
 .hero__parrafo {
   width: 90%;
   height: auto;
 }
+
 .hero__parrafo__titulo {
   margin-bottom: 0.5rem;
 }
+
 .hero__img {
   width: 150px;
 }
+
 .hero__llegar {
   padding-bottom: 0.5rem;
 }
+
 .hero__iframe {
   width: 150px;
   height: 112px;
 }
+
 .contacto__img {
   width: 200px;
   justify-self: center;
   align-self: center;
   grid-area: imagen;
 }
+
 .body__wapp {
   grid-area: whatsapp;
 }
+
 .wapp__img {
   width: 45px;
 }
+
 .footer {
   background: linear-gradient(70deg, #0066a1, #3c7a97);
   padding: 5px;
   margin-top: 10px;
   grid-area: footer;
 }
+
 .footer__section {
   padding: 5px;
   text-align: center;
 }
+
 .footer__imgicon {
   width: 30px;
   height: 30px;
   align-items: center;
 }
+
 .footer__p {
   font-size: x-small;
 }
-.fieldset {
+
+fieldset {
   background-color: #fcca86;
   padding: 4px;
   margin: 6px 8px 4px;
 }
-.fieldset__form {
+fieldset form {
   padding: 2px;
   display: flex;
   flex-direction: column;
 }
-.fieldset__textarea {
+fieldset form label {
+  margin: 3px;
+  align-self: flex-start;
+}
+fieldset form input {
+  padding: 2px;
+  text-align: center;
+  border-radius: 4px;
+  height: fit-content;
+}
+fieldset select {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+fieldset textarea {
   height: 80px;
   width: auto;
   margin-top: 3px;
   margin-bottom: 3px;
 }
-label {
-  margin: 3px;
-  align-self: flex-start;
-}
-.fieldset__select {
-  margin-top: 10px;
-  margin-bottom: 3px;
-}
+
 .fieldset__btn {
-  padding: 2px;
-  text-align: center;
-  border-radius: 4px;
-  height: fit-content;
   display: inline;
 }
+
 @media screen and (min-width: 1024px) {
   .titulo {
     font-size: 40px;
   }
+
   .paratexto {
     font-size: 25px;
   }
+
   .texto {
     font-size: 25px;
   }
-  .li {
-    font-weight: bold;
-    padding-bottom: 3px;
-    font-size: small;
-  }
+
   .container {
     display: grid;
-    grid-template-areas:
-      "header header"
-      "parrafo imagen"
-      "llegar llegar"
-      "none whatsapp"
-      "footer footer";
+    grid-template-areas: "header header" "parrafo imagen" "llegar llegar" "none whatsapp" "footer footer";
     grid-template-columns: auto auto;
     grid-template-rows: 8rem auto auto 100px 200px;
     background-image: url("images/fondo1.gif");
@@ -196,14 +201,10 @@ label {
     background-repeat: no-repeat;
     min-height: 100vh;
   }
+
   .container__contacto {
     display: grid;
-    grid-template-areas:
-      "header header"
-      "parrafo formulario"
-      "none formulario"
-      "none whatsapp"
-      "footer footer";
+    grid-template-areas: "header header" "parrafo formulario" "none formulario" "none whatsapp" "footer footer";
     grid-template-columns: auto auto;
     grid-template-rows: 8rem auto auto 100px 200px;
     background-image: url("images/fondo1.gif");
@@ -212,21 +213,18 @@ label {
     background-repeat: no-repeat;
     min-height: 100vh;
   }
-  .header {
+
+  body header {
     padding: 1.5rem;
     position: sticky;
     top: 0;
-    height: 8rem;
+    height: 7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     grid-area: header;
   }
-  #logo {
-    height: 6rem;
-    margin: 3px;
-  }
-  .header__nav {
+  body header nav {
     padding: 1rem;
     -webkit-box-shadow: -15px 14px 15px -2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -15px 14px 15px -2px rgba(0, 0, 0, 0.75);
@@ -234,15 +232,25 @@ label {
     border-radius: 5px;
     width: fit-content;
   }
-  .header__nav ul li {
+  body header nav ul {
+    display: inline-block;
+  }
+  body header nav ul li {
     display: inline-block;
     text-decoration: underline;
     text-shadow: 2px;
-  }
-  .header__nav li {
     padding-left: 1rem;
     padding-right: 1rem;
+    font-weight: bold;
+    padding-bottom: 3px;
+    font-size: small;
   }
+
+  #logo {
+    height: 6rem;
+    margin: 3px;
+  }
+
   .hero {
     padding-top: 3rem;
     margin-bottom: 3rem;
@@ -250,36 +258,44 @@ label {
     align-self: center;
     grid-area: parrafo;
   }
+
   .hero__parrafo {
     width: 400px;
   }
+
   .hero__parrafo__titulo {
     margin-bottom: 2rem;
   }
+
   .hero__img {
     width: 400px;
     justify-self: center;
     align-self: center;
     grid-area: imagen;
   }
+
   .hero__llegar {
     justify-self: center;
     align-self: center;
     grid-area: llegar;
   }
+
   .hero__iframe {
     width: 300px;
     height: 225px;
   }
+
   .wapp__img {
     width: 80px;
     display: inline-block;
   }
+
   .body__wapp {
     display: flex;
     justify-content: flex-end;
     padding-right: 10px;
   }
+
   .animate__animated.animate__shakeY {
     --animate-duration: 3s;
     --animate-delay: 1s;
@@ -293,6 +309,7 @@ label {
     justify-content: space-evenly;
     grid-area: footer;
   }
+
   .footer__section {
     width: 320px;
     height: 170px;
@@ -301,15 +318,18 @@ label {
     align-items: center;
     justify-content: space-around;
   }
+
   .footer__imgicon {
     width: 30px;
     height: 30px;
     align-items: center;
   }
+
   .footer__p {
     font-size: large;
   }
-  .fieldset {
+
+  fieldset {
     padding: 10px;
     margin: 10px;
     width: 700px;
@@ -318,25 +338,30 @@ label {
     justify-self: center;
     grid-area: formulario;
   }
-  .fieldset__form {
+  fieldset form {
     padding: 3px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
   }
-  .fieldset__textarea {
+  fieldset form label {
+    margin: 8px;
+  }
+  fieldset form input {
+    height: 25px;
+    width: 200px;
+  }
+  fieldset form select {
+    font-size: large;
+    align-self: start;
+  }
+  fieldset textarea {
     margin-top: 5px;
     padding: 5px;
     width: -webkit-fill-available;
     height: 300px;
   }
-  label {
-    margin: 8px;
-  }
-  input {
-    height: 25px;
-    width: 200px;
-  }
+
   .fieldset__btn {
     padding: 8px;
     text-align: center;
@@ -348,18 +373,15 @@ label {
     gap: 30px;
     font-size: medium;
   }
-  .fieldset__select {
-    font-size: large;
-    align-self: start;
+
+  .turnos__img {
+    width: 300px;
+    animation-name: efecto_wip;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
   }
-}
-.contacto__img {
-  width: 300px;
-  animation-name: efecto_wip;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: 2s;
-  animation-delay: 0s;
 }
 @keyframes efecto_wip {
   0% {
@@ -378,3 +400,5 @@ label {
     width: 300px;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
