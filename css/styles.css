@@ -12,8 +12,13 @@
   font-size: 20px;
 }
 
-.paratexto {
+.subtitulo {
   font-family: "Josefin Slab", serif;
+  font-size: 15px;
+}
+
+.paratexto {
+  font-family: "Josefin Slab", serif, bold;
   font-size: 12px;
 }
 
@@ -92,7 +97,7 @@ body header nav li:hover {
   margin-bottom: 0.5rem;
 }
 
-.hero__img {
+.hero__img, .hero__iframe {
   width: 150px;
 }
 
@@ -101,7 +106,6 @@ body header nav li:hover {
 }
 
 .hero__iframe {
-  width: 150px;
   height: 112px;
 }
 
@@ -182,6 +186,12 @@ fieldset textarea {
     font-size: 40px;
   }
 
+  .subtitulo {
+    font-size: 35px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
   .paratexto {
     font-size: 25px;
   }
@@ -251,6 +261,22 @@ fieldset textarea {
     margin: 3px;
   }
 
+  .bg-index {
+    background-color: blue;
+  }
+
+  .bg-instit {
+    background-color: red;
+  }
+
+  .bg-pacientes {
+    background-color: lightgreen;
+  }
+
+  .bg-pros {
+    background-color: lightblue;
+  }
+
   .hero {
     padding-top: 3rem;
     margin-bottom: 3rem;
@@ -267,7 +293,7 @@ fieldset textarea {
     margin-bottom: 2rem;
   }
 
-  .hero__img {
+  .hero__img, .hero__iframe {
     width: 400px;
     justify-self: center;
     align-self: center;

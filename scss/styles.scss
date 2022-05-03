@@ -62,7 +62,7 @@ body {
   padding-bottom: 0.5rem;
 }
 .hero__iframe {
-  width: 150px;
+  @extend .hero__img;
   height: 112px;
 }
 .contacto__img {
@@ -133,6 +133,11 @@ fieldset {
 @media screen and (min-width: 1024px) {
   .titulo {
     font-size: 40px;
+  }
+  .subtitulo {
+    font-size: 35px;
+    margin-bottom: 5px;
+    font-weight: bold;
   }
   .paratexto {
     font-size: 25px;
@@ -209,11 +214,19 @@ fieldset {
     height: 6rem;
     margin: 3px;
   }
+  @each $name-color, $bgcolor in $color {
+    .#{$name-color} {
+      background-color: $bgcolor;
+    }
+  }
+  @mixin location($ejey, $ejex) {
+    justify-self: $ejey;
+    align-self: $ejex;
+  }
   .hero {
     padding-top: 3rem;
     margin-bottom: 3rem;
-    justify-self: center;
-    align-self: center;
+    @include location(center, center);
     grid-area: parrafo;
   }
   .hero__parrafo {
@@ -224,13 +237,11 @@ fieldset {
   }
   .hero__img {
     width: 400px;
-    justify-self: center;
-    align-self: center;
+    @include location(center, center);
     grid-area: imagen;
   }
   .hero__llegar {
-    justify-self: center;
-    align-self: center;
+    @include location(center, center);
     grid-area: llegar;
   }
   .hero__iframe {

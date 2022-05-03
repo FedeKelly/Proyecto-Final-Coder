@@ -11,8 +11,12 @@
   font-family: "Americana BT Bold", arial;
   font-size: 20px;
 }
-.paratexto {
+.subtitulo {
   font-family: "Josefin Slab", serif;
+  font-size: 15px;
+}
+.paratexto {
+  font-family: "Josefin Slab", serif, bold;
   font-size: 12px;
 }
 .texto {
@@ -36,3 +40,9 @@ a {
 ul {
   list-style-type: none;
 }
+$color: (
+  bg-index: blue,
+  bg-instit: red,
+  bg-pacientes: lightgreen,
+  bg-pros: lightblue,
+);
