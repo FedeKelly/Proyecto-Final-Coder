@@ -261,22 +261,6 @@ fieldset textarea {
     margin: 3px;
   }
 
-  .bg-index {
-    background-color: blue;
-  }
-
-  .bg-instit {
-    background-color: red;
-  }
-
-  .bg-pacientes {
-    background-color: lightgreen;
-  }
-
-  .bg-pros {
-    background-color: lightblue;
-  }
-
   .hero {
     padding-top: 3rem;
     margin-bottom: 3rem;

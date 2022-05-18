@@ -214,11 +214,7 @@ fieldset {
     height: 6rem;
     margin: 3px;
   }
-  @each $name-color, $bgcolor in $color {
-    .#{$name-color} {
-      background-color: $bgcolor;
-    }
-  }
+
   @mixin location($ejey, $ejex) {
     justify-self: $ejey;
     align-self: $ejex;
