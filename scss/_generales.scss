@@ -40,9 +40,5 @@ a {
 ul {
   list-style-type: none;
 }
-$color: (
-  bg-index: blue,
-  bg-instit: red,
-  bg-pacientes: lightgreen,
-  bg-pros: lightblue,
-);
+$font-nombre-prof: "Gotham", sans-serif;
+$font-descripcion-prof: "Gotham", sans-serif;

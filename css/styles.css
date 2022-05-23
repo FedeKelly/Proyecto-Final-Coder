@@ -97,7 +97,7 @@ body header nav li:hover {
   margin-bottom: 0.5rem;
 }
 
-.hero__img, .hero__iframe {
+.hero__img, .profesionales .tarjeta .img_profesional, .hero__iframe {
   width: 150px;
 }
 
@@ -122,6 +122,31 @@ body header nav li:hover {
 
 .wapp__img {
   width: 45px;
+}
+
+.profesionales .tarjeta {
+  background-color: #23acce;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+}
+.profesionales .tarjeta .img_profesional {
+  -webkit-box-shadow: -8px 12px 10px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 12px 10px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 12px 10px 3px rgba(0, 0, 0, 0.75);
+}
+.profesionales .tarjeta .nombre_prof {
+  font-style: "Gotham", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+  text-decoration: underline;
+}
+.profesionales .tarjeta .descripcion_prof {
+  font-style: "Gotham", sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .footer {
@@ -224,6 +249,18 @@ fieldset textarea {
     min-height: 100vh;
   }
 
+  .container_turnos {
+    display: grid;
+    grid-template-areas: "header header" "parrafo imagen" "none whatsapp" "footer footer";
+    grid-template-columns: auto 600px;
+    grid-template-rows: 8rem 400px auto 200px;
+    background-image: url("images/fondo1.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
   body header {
     padding: 1.5rem;
     position: sticky;
@@ -277,7 +314,7 @@ fieldset textarea {
     margin-bottom: 2rem;
   }
 
-  .hero__img, .hero__iframe {
+  .hero__img, .hero__iframe, .profesionales .tarjeta .img_profesional {
     width: 400px;
     justify-self: center;
     align-self: center;
@@ -311,8 +348,26 @@ fieldset textarea {
     --animate-delay: 1s;
   }
 
+  .profesionales {
+    grid-area: llegar;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .profesionales .tarjeta {
+    width: 300px;
+    margin: 3rem;
+  }
+  .profesionales .tarjeta .img_profesional {
+    width: 250px;
+  }
+  .profesionales .tarjeta .descripcion_prof {
+    margin-left: 5px;
+  }
+
   .footer {
-    background-color: #00a19a;
     padding: 10px;
     margin-top: 15px;
     display: flex;
