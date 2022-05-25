@@ -15,7 +15,7 @@
 
 .subtitulo {
   font-family: "Josefin Slab", serif;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .paratexto {
@@ -48,6 +48,59 @@ ul {
   list-style-type: none;
 }
 
+.nav-toggle {
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 3rem;
+  height: 3rem;
+  padding: 0em;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
 body {
   background: linear-gradient(to bottom right, #455A64, #607D8B);
   text-align: center;
@@ -59,6 +112,9 @@ body header {
   height: fit-content;
 }
 body header nav {
+  visibility: hidden;
+  position: absolute;
+  height: 0;
   background-color: #607D8B;
   grid-area: nav;
   padding-top: 5px;
@@ -90,7 +146,6 @@ body header nav li:hover {
 }
 
 .hero__parrafo {
-  width: 90%;
   height: auto;
 }
 
@@ -259,6 +314,10 @@ fieldset textarea {
     min-height: 100vh;
   }
 
+  .nav-toggle {
+    display: none;
+  }
+
   body header {
     padding: 1.5rem;
     position: sticky;
@@ -271,14 +330,18 @@ fieldset textarea {
   }
   body header nav {
     padding: 1rem;
+    visibility: visible;
+    height: auto;
     -webkit-box-shadow: -15px 14px 15px -2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -15px 14px 15px -2px rgba(0, 0, 0, 0.75);
     box-shadow: -15px 14px 15px -2px rgba(0, 0, 0, 0.75);
     border-radius: 5px;
     width: fit-content;
+    position: relative;
   }
   body header nav ul {
     display: inline-block;
+    align-items: center;
   }
   body header nav ul li {
     display: inline-block;

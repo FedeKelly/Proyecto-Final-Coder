@@ -1,7 +1,66 @@
-
+/*DISEÑO DE PALETA DE COLORES*/
 @import "paleta";
+
+/*PARAMETRO GENERALES*/
 @import "generales";
+
+/*APLICACION DE PALETA DE COLORES*/
 @import "colores";
+
+/*HAMBURGUESA*/
+.nav-toggle {
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 3rem;
+  height: 3rem;
+  padding: 0em;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+} 
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+ /*FIN HAMBURGUESA*/ 
+
 
 body {
   background: $body-background;
@@ -13,7 +72,11 @@ body {
     border-bottom: 1px solid black;
     height: fit-content;
 
+    
     nav {
+      visibility:hidden;
+      position: absolute;
+      height: 0;
       background-color: $nav-background;
       grid-area: nav;
       padding-top: 5px;
@@ -44,7 +107,6 @@ body {
   grid-area: hero;
 }
 .hero__parrafo {
-  width: 90%;
   height: auto;
 }
 .hero__parrafo__titulo {
@@ -72,6 +134,8 @@ body {
 .wapp__img {
   width: 45px;
 }
+
+/*TARJETAS PROFESIONALES*/
 .profesionales{
  .tarjeta{
    background-color: $background-tarjeta;
@@ -100,7 +164,9 @@ body {
   }
  }
 }
+/*FIN TARJETAS PROFESIONALES*/
 
+/*DISEÑO FOOTER*/
 .footer {
   background: $footer-background;
   padding: 5px;
@@ -119,6 +185,8 @@ body {
 .footer__p {
   font-size: x-small;
 }
+
+/*DISEÑO FORMULARIO CONTACTO*/
 fieldset {
   background-color: $fieldset-background;
   padding: 4px;
@@ -154,6 +222,8 @@ fieldset {
   display: inline;
 }
 
+
+/*MEDIA QUERIES TAMAÑO GRANDE*/
 @media screen and (min-width: 1024px) {
   .titulo {
     font-size: 30px;
@@ -169,6 +239,8 @@ fieldset {
   .texto {
     font-size: 20px;
   }
+
+  /*DISPLAY GRID Y FLEXBOX*/
   .container {
     display: grid;
     grid-template-areas:
@@ -213,7 +285,9 @@ fieldset {
     background-repeat: no-repeat;
     min-height: 100vh;
   }
-  
+  .nav-toggle {
+    display: none;
+  }
   body {
     header {
       padding: 1.5rem;
@@ -224,15 +298,20 @@ fieldset {
       justify-content: space-between;
       align-items: center;
       grid-area: header;
+
       nav {
         padding: 1rem;
+        visibility: visible;
+        height: auto;
         -webkit-box-shadow: -15px 14px 15px -2px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -15px 14px 15px -2px rgba(0, 0, 0, 0.75);
         box-shadow: -15px 14px 15px -2px rgba(0, 0, 0, 0.75);
         border-radius: 5px;
         width: fit-content;
+        position: relative;
         ul {
           display: inline-block;
+          align-items: center;
           li {
             display: inline-block;
             text-decoration: underline;
@@ -294,6 +373,8 @@ fieldset {
     --animate-duration: 3s;
     --animate-delay: 1s;
   }
+
+  /*DISEÑO TARJETAS PROFESIONALES*/
 .profesionales{
   grid-area: llegar;
   display: flex;
@@ -312,6 +393,8 @@ fieldset {
     }
   }
 }
+
+/*DISEÑO FOOTER*/
   .footer {
     padding: 10px;
     margin-top: 15px;
@@ -336,6 +419,8 @@ fieldset {
     font-size: medium;
     font-family: "Gotham", sans-serif;
   }
+
+  /*DISEÑO FORMULARIO CONTACTO*/
   fieldset {
     padding: 10px;
     margin: 10px;
@@ -389,6 +474,8 @@ fieldset {
     animation-delay: 0s;
   }
 }
+
+/*EFECTO WORK IN PROGRESS*/
 @keyframes efecto_wip {
   0% {
     width: 300px;
