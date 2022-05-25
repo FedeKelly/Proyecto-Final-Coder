@@ -1,3 +1,5 @@
+
+@import "paleta";
 @import "generales";
 @import "colores";
 
@@ -154,10 +156,10 @@ fieldset {
 
 @media screen and (min-width: 1024px) {
   .titulo {
-    font-size: 40px;
+    font-size: 30px;
   }
   .subtitulo {
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 5px;
     font-weight: bold;
   }
@@ -165,7 +167,7 @@ fieldset {
     font-size: 25px;
   }
   .texto {
-    font-size: 25px;
+    font-size: 20px;
   }
   .container {
     display: grid;
@@ -177,7 +179,6 @@ fieldset {
       "footer footer";
     grid-template-columns: auto auto;
     grid-template-rows: 8rem auto auto 100px 200px;
-    background-image: url("images/fondo1.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -193,7 +194,6 @@ fieldset {
       "footer footer";
     grid-template-columns: auto auto;
     grid-template-rows: 8rem auto auto 100px 200px;
-    background-image: url("images/fondo1.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -208,7 +208,6 @@ fieldset {
       "footer footer";
     grid-template-columns: auto 600px;
     grid-template-rows: 8rem 400px auto 200px;
-    background-image: url("images/fondo1.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -334,12 +333,13 @@ fieldset {
     align-items: center;
   }
   .footer__p {
-    font-size: large;
+    font-size: medium;
+    font-family: "Gotham", sans-serif;
   }
   fieldset {
     padding: 10px;
     margin: 10px;
-    width: 700px;
+    width: 670px;
     height: fit-content;
     align-self: center;
     justify-self: center;
