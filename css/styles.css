@@ -62,7 +62,7 @@ ul {
   border-radius: 0.25rem;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.55);
-  transition: opacity 250ms ease;
+  transition: opacity 500ms ease;
   position: absolute;
   left: 0;
 }
